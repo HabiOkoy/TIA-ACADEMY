@@ -1,0 +1,136 @@
+
+Lengkapi Menu.java dan DBUtil di bawah ini sehingga bisa melakukan CRUD lengkap:
+
+
+DBUtil.java:
+
+package utils;
+
+import java.sql.*;
+
+public class DBUtil {
+    static Connection connection = null;
+    static Statement statement = null;
+
+    // konek ke DB
+    public static void connect() {
+        try {
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/solo","root","");
+            statement = connection.createStatement();
+            System.out.println("Koneksi ke DB berhasil!");
+        } catch (SQLException e) {
+            System.out.println("Koneksi ke DB gagal!");
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static ResultSet selectAll(String tableName) throws SQLException {
+        return statement.executeQuery("select * from " + tableName);
+    }
+
+    public static boolean insert(String tableName, int id, String name, int age) {
+        // create query
+        String query = "insert into " + tableName + " values (" + id + ", '" + name + "', " + age + ")";
+        try {
+            if (statement.executeUpdate(query) > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+
+Menu.java:
+package menu;
+
+import utils.DBUtil;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class Menu {
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void showMenu() {
+        // koneksi ke JDBC
+        DBUtil.connect();
+        // display menu
+        boolean isExit = false;
+        while (!isExit) {
+            System.out.println("Daftar Menu:");
+            System.out.println("1. Show All Record");
+            System.out.println("2. Insert Record");
+            System.out.println("3. Update Record");
+            System.out.println("4. Delete Record");
+            System.out.println("5. EXIT");
+            System.out.println("Pilihan Anda: ");
+            String input = scanner.nextLine();
+            switch (input) {
+                case "1":
+                    showAllRecord();
+                    break;
+                case "2":
+                    insertRecord();
+                    break;
+                case "3":
+                    updateRecord();
+                    break;
+                case "4":
+                    deleteRecord();
+                    break;
+                case "5":
+                    System.out.println("Exit");
+                    isExit = true;
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    // fungsi-fungsi
+    public static void showAllRecord() {
+        ResultSet resultSet = null;
+        try {
+            resultSet = DBUtil.selectAll("emp");
+            while (resultSet.next()) {
+                System.out.println("ID: " + resultSet.getInt("id"));
+                System.out.println("Nama: " + resultSet.getString("name"));
+                System.out.println("Age: " + resultSet.getInt("age"));
+                System.out.println();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void insertRecord() {
+        // user masukkan data
+        System.out.println("Masukkan data");
+        System.out.println("ID: ");
+        int id = Integer.parseInt(scanner.nextLine());
+        System.out.println("Nama: ");
+        String nama = scanner.nextLine();
+        System.out.println("Age: ");
+        int age = Integer.parseInt(scanner.nextLine());
+        // cek hasil insert apakah true atau false
+        if (DBUtil.insert("emp", id, nama, age)) {
+            System.out.println("Insert " + nama + " berhasil!");
+        } else {
+            System.out.println("Insert " + nama + " gagal!");
+        }
+    }
+
+    public static void updateRecord() {
+
+    }
+
+    public static void deleteRecord() {
+
+    }
+}
