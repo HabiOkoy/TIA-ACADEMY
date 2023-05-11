@@ -1,0 +1,34 @@
+Buat method dengan nama volBangun (method overloading) untuk menghitung:
+
+Volume Balok
+
+Volume Bola 
+
+Volume Tabung
+
+
+Tampilan sebagai berikut:
+
+
+MENU
+
+1. Volume Balok
+
+2. Volume Bola
+
+3. Volume Tabung
+
+4. EXIT
+
+Input nomor : 1
+
+Volume Balok
+
+Panjang = 2
+
+Lebar = 3
+
+Tinggi = 4
+
+Volume Balok = 24
+
