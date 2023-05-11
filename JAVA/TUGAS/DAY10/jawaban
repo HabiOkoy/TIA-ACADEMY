@@ -1,0 +1,10 @@
+
+1. Mudah digunakan dan disesuaikan: Collection menyediakan banyak struktur data yang mudah digunakan dan disesuaikan sesuai dengan kebutuhan pemrogram.
+
+2. Efisiensi: Collection memberikan kinerja yang lebih baik dan lebih efisien dibandingkan dengan penggunaan array karena Collection memperbolehkan data untuk dimasukkan dan diambil dalam jumlah yang berbeda-beda.
+
+3. Keamanan: Collection menyediakan tingkat keamanan yang lebih tinggi daripada array karena koleksi dapat mengecek tipe data selama kompilasi.
+
+4. Mudah ditambahkan dan dihapus: Collection memungkinkan data ditambahkan dan dihapus dengan mudah dan sederhana.
+
+5. Peningkatan kinerja: Beberapa struktur data koleksi memiliki peningkatan kinerja yang signifikan untuk operasi tertentu seperti pencarian, pengurutan, dan penghapusan.
