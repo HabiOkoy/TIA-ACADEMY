@@ -1,0 +1,17 @@
+
+1. Phase 1 (Requirement analysis):Business Analyst, project manager
+Phase 2 (Feasibility study) : project manager
+Phase 3 (Design) : UI/UX designer, data analyst, system analyst
+Phase 4 (Coding) : Frontend,backend developer
+Phase 5 (Testing) : QA tester, UAT tester
+Phase 6 (Installation/Deployment) : DevOps engineer,release manager
+Phase 7 (Maintenance) : bug fixing engineer, technical support engineer
+
+2. Data scientist memiliki peran di beberapa SDLC seperti :
+- Design = data scientist bisa membantu dalam mendesign algoritma dan model system, bisa juga membantu dalam menentukan langkah prapemrosesan data
+- Coding = data scientist bekerja sama dengan software developer untuk mengintegrasikan model dan algoritma ke dalam software system
+- Testing = Data scientist membantu dalam testing model dan algoritma agar akurasi dan performa dalam aplikasi yang akan dibuat menjadi lebih baik
+
+3. Menurut saya dari kedua SDLC tidak ada yang terbaik karena setiap SDLC memiliki kelebihan dan kekurangan masing masing seperti kalau waterfall digunakan untuk membuat sesuatu yang memiliki budget dan timeline yang fixed dan tidak banyak flexibility yang diberikan.
+
+Kalau menggunakan agile, cocok untuk membuat projek yang flexibel, dan memungkinkan adanya perubahan selama proses development maka dari itu anggaran dapat berubah sesuai kebutuhan proyek
