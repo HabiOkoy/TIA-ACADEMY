@@ -1,0 +1,101 @@
+/*
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
+package DAY_11;
+
+/**
+*
+* @author Xiao You
+*/
+import java.util.*;
+public class kalkulator {
+public static void main(String[]arga){
+
+Scanner masukan = new Scanner(System.in);
+int pilihan = 9;
+do{
+System.err.println("====================");
+System.out.println("PROGRAM KALKULATOR ");
+System.out.println("====================");
+
+System.out.println("1. PERTAMBAHAN");
+System.out.println("2. PENGURANGAN");
+System.out.println("3. PERKALIAN");
+System.out.println("4. PEMBAGIAN");
+System.out.println("0. EXIT");
+System.out.println("Masukan Pilihan Anda : ");
+System.out.print("Press '0' for Exit!!!");
+
+pilihan = masukan.nextInt();
+switch(pilihan){
+case 1 : pertambahan();break;
+case 2 : pengurangan();break;
+case 3 : perkalian();break;
+case 4 : pembagian();break;
+}
+}while(pilihan !=0);
+}
+private static void pertambahan(){
+Scanner masukan = new Scanner(System.in);
+int nilai1, nilai2, jumlah;
+
+System.out.println("==============================");
+System.out.println("PROGRAM MENGHITUNG PERTAMBAHAN");
+System.out.println("==============================");
+
+System.out.print("Masukan nilai pertama : ");
+nilai1 = masukan.nextInt();
+System.out.print("Masukan nilai kedua : ");
+nilai2 = masukan.nextInt();
+jumlah = nilai1 + nilai2;
+System.out.println("HASIL PERJUMLAHAN ADALAH : "+ jumlah);
+}
+private static void pengurangan(){
+Scanner masukan = new Scanner(System.in);
+int nilai1, nilai2, kurang;
+
+System.out.println("==============================");
+System.out.println("PROGRAM MENGHITUNG PENGURANGAN");
+System.out.println("==============================");
+
+System.out.print("Masukan nilai pertama : ");
+nilai1 = masukan.nextInt();
+System.out.print("Masukan nilai kedua : ");
+nilai2 = masukan.nextInt();
+kurang = nilai1 - nilai2;
+System.out.println("HASIL PERJUMLAHAN ADALAH : "+ kurang);
+
+}
+private static void perkalian(){
+Scanner masukan = new Scanner(System.in);
+int nilai1, nilai2, kali;
+
+System.out.println("==============================");
+System.out.println("PROGRAM MENGHITUNG PERKALIAN");
+System.out.println("==============================");
+
+System.out.print("Masukan nilai pertama : ");
+nilai1 = masukan.nextInt();
+System.out.print("Masukan nilai kedua : ");
+nilai2 = masukan.nextInt();
+kali = nilai1 * nilai2;
+System.out.println("HASIL PERJUMLAHAN ADALAH : "+ kali);
+}
+private static void pembagian(){
+Scanner masukan = new Scanner(System.in);
+int nilai1, nilai2, bagi;
+
+System.out.println("==============================");
+System.out.println("PROGRAM MENGHITUNG PEMBAGIAN");
+System.out.println("==============================");
+
+System.out.print("Masukan nilai pertama : ");
+nilai1 = masukan.nextInt();
+System.out.print("Masukan nilai kedua : ");
+nilai2 = masukan.nextInt();
+bagi = nilai1 / nilai2;
+System.out.println("HASIL PERJUMLAHAN ADALAH : "+ bagi);
+}
+}
