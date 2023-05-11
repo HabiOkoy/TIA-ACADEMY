@@ -1,0 +1,72 @@
+Tampilkan hasil ss dari kode berikut:
+
+
+class NormalRun {
+
+		public void run() {
+
+		for (int i=1; i<=5; i++) {
+
+			System.out.println(i+"<-- from normal run");
+
+		}		
+
+	}	
+
+}
+
+
+
+class AnotherThread extends Thread {
+
+	@Override
+
+	public void run() {
+
+		System.out.println("Hello from another thread");
+
+		for (int i=1; i<=10; i++) {
+
+			System.out.println(i+"<-- from another thread");
+
+			try{Thread.sleep(1000);}catch(Exception e){}
+
+		}
+
+	}
+
+}
+
+
+
+class Main {
+
+	// concurrency
+
+	public static void main(String[] args) {
+
+		// bikin instance dan start thread
+
+		AnotherThread anotherThread = new AnotherThread();
+
+		NormalRun normalRun = new NormalRun();
+
+		anotherThread.start();
+
+		// normalRun.run();
+
+		// proses di bawah berjalan bersamaan dengan thread atas
+
+		System.out.println("Hello from main thread");
+
+		for (int i=11; i<=20; i++) {
+
+			System.out.println(i+"<-- from main thread");
+
+			try{Thread.sleep(1000);}catch(Exception e){}
+
+		}	
+
+	}
+
+}
