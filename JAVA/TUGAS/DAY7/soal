@@ -1,0 +1,17 @@
+Buat Program Java yang mengaplikasikan seleksi kondisi Switch Case dengan membuat kalkulator sederhana, dengan contoh sebagai berikut:
+
+
+Choose an operator: (+, -, *, or /)
+
+*
+
+Enter first number
+
+3
+
+Enter second number
+
+9
+
+3.0 * 9.0 = 27.0
+
