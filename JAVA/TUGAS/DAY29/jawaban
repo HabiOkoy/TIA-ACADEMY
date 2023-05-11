@@ -1,0 +1,77 @@
+Video 1 :Apa itu design pattern ?
+
+Design pattern : solusi umum dari permasalahan umur yang sering terjadi dlm membuat software
+Design pattern bukanlah hal yang bisa di translate ke dalam kode program secara langsung
+Keuntungan design pattern adalah design software lebih baik dan software mudah di maintain
+
+
+Video 2 : Singleton
+Singleton adalah sebuah pattern yang digunakan untuk membatasi pembuatan objek menjadi satu objek saja
+
+Di Dalam video tersebut dipraktekkan langsung cara menggunakan singleton. Menyimpan data order yang tiap order memiliki detail.Untuk menyimpan data order, yang ada di dalam class order service dengan menggunakan method save.
+
+Kita pasti akan memasukkan data data tersebut ke dalam database. Kita tidak perlu untuk membuat objek berkali kali,cukup 1 objek saja untuk memasukkan data ke order dan order detail yaitu dengan cara menggunakan getConnection ()
+
+
+Video 3 : Builder Pattern
+Salah satu desain pattern yang bernama builder atau singkatnya Builder pattern merupakan desain pattern yang digunakan untuk memisahkan cara pembuatan objek dari class objeknya.Builder pattern memungkinkan untuk membuat objek yang kompleks dengan cara terorganisir.
+
+
+Video 4 : Factory Method
+Factory Method merupakan salah satu design pattern yang digunakan untuk membuat objek tanpa menentukan class spesifik yang akan dibuat. Atau bisa dibilang tujuan penggunaan factory method yaitu untuk memudahkan user untuk melakukan supply data yang emang dibutuhkan.
+
+
+Video 5 : Abstract Factory
+Abstract Factory memiliki pola yang mendefinisikan interface atau abstract class untuk membuat suatu objek tanpa harus menentukan sub-classnya. Abstract Factory memiliki kemiripan dengan Factory Method. Misalnya dibuat dalam pembuatan suatu program game dimana terdiri dari 2 buah interface agar bisa dengan mudah membedakan pembagian level dalam suatu program pembuatan game.
+
+
+Video 6 : Prototype
+Prototype memiliki pola yang memungkinkan kita untuk menyalin objek menggunakan instance prototype yang ada dengan membuat objek yang baru dan dapat dikustomisasi dengan sesuai kebutuhan tanpa bergantung dengan objek aslinya. Prototype adalah pattern dimana menjadikan sebuah objek menjadi prototype yaitu data dasar, dimana membuat objek baru namun mengambil data dari prototype atau data sebelumnya atau dilakukan berupa clonning data objek. Contoh dalam pembuatan program untuk suatu market
+
+
+Video 7 : Object Pool
+Object pool adalah tempat dimana kita akan memasukkan beberapa object dengan data yang sama dan kita set nilai minimum berapa object dengan data yang sma dan kita set nilai minimum berapa dan maksimumnya berapa, dimana tidak akan pernah melebihi nilai maksimum yang telah di set tadi.
+Dengan database pool atau istilah nya design pattern pool ini kita bisa mengstor data yang emang sedikit mahal di dalam pool dan ketika kita butuh kita tinggal ambil dari pool nya dan setelah selesai atau tidak butuh lagi kita tinggal mengembalikan lagi ke dalam poolnya.
+
+
+Vidio 8 : Adapter
+Adapter Pattern layaknya sebuah jembatan antara dua objek yang berbeda namun tetap dalam tipe yang sama.
+Adapter pattern adalah merubah kelas dari yang sebelumnya berbeda-beda kita bikin satu adapter class dengan Tujuan untuk menggeneral semua kelas-kelas yang berbeda tersebut.
+
+Langkah-langkah membuat adapter :
+1. Membuat general adapter
+2. Membuat implementasi adapter untuk setiap kelas yang dibutuhkan
+3. Implementasikan semua method nya
+4. Membuat atribut dan constructor
+5. Override method yang telah di bikin sebelum nya.
+
+Contohnya penggunaan dari adapter pattern ini misalnya ketika kita punya toko online dimana punya katalog yang menjual lebih dari satu produk.
+Nah permasalahannya gimana sih supaya kita bisa menampilkan beberapa jenis produk yang berbeda dalam satu katalog. untuk menyelesaikan permasalahan tersebut kita menggunakan Adapter Pattern.
+
+
+Video 9: Design Pattern Repository
+Design Pattern Repository digunakan ketika kita ingin menyimpan dan mengakses objek dari penyimpanan data. Pattern ini memisahkan logika akses data dari logika bisnis, sehingga memudahkan pengelolaan dan pengembangan aplikasi.
+
+Video 10: Design Pattern Facade
+Design Pattern Facade digunakan ketika kita ingin menyembunyikan kompleksitas dari sebuah sistem dan menyediakan antarmuka yang lebih sederhana untuk klien. Pattern ini menyediakan sebuah antarmuka yang terdiri dari beberapa antarmuka kompleks dari sistem tersebut.
+
+
+Vidio 11 : Template Method
+Contoh Kasus Pembuatan : Class Block Games , (Program Games yang akan menampilkan sebuah balok ), logic dari Program ini adalah :
+1. Menggunakan Print Out Untuk Mencetak Printah Block Games
+2. Peulangan for untuk membuat cetakan kotak huruf O yang akan di print perbaris”
+3. dan di akhir program akan di cetak “FINISH BLOCK GAME”
+Output Block Games.
+Bila kita ingin membuat program yang sama akan tetapi dengan pola yang berbeda kita di haruskan mengcopy file tersebut, ada baik nya dari pada menggunakan pola copy paste lebihbaik kita menggunaka template method.
+Template Method adalah dimana sebuah class yang berisi method template nya yang dimana turunan nya hanya merubah data dari template tersebut.
+fungsi dari template method sangat berfungsi untuk membuat alur program yang mempunya logic yang sama.
+
+
+Vidio 12 : Bridge
+Bridge adalah structural design pattern yang memungkinkan Anda membagi class berukuran besar atau sekumpulan class yang terkait menjadi dua hierarki terpisah (abstraksi dan implementasi) yang dapat dikembangkan secara independen antara satu dengan lain.
+
+Video 13 : COMPOSITE
+Composite adalah design pattern dalam pemrograman berorientasi objek yang memungkinkan objek terdiri dari objek-objek lain yang serupa dan memiliki tingkatan atau hirarki.
+Dalam pola desain Composite, objek dapat memiliki objek-objek lain sebagai bagian dari dirinya sendiri, dan objek-objek ini dapat memiliki objek-objek lain lagi dalam hierarki yang membentuk struktur pohon. Semua objek dalam hierarki memiliki antarmuka yang sama sehingga mereka dapat diakses dan diperlakukan secara seragam, meskipun mereka mungkin berbeda secara internal.
+
+Caranya dengan membuat satu class lagi khusus arraylist yang Bernama CompositeCategory.
