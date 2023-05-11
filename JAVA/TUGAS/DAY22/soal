@@ -1,0 +1,12 @@
+Buat aplikasi Echo server menggunakan multithreading
+
+1. Main.java (server)
+
+2. Echoer.java
+
+3. Main.java (client)
+
+Ingat, jika ada nama yg sama maka harus diletakkan di folder yang terpisah agar tidak tabrakan.
+
+Kirim hasil ss dua window command prompt server dan client di sini 
+
