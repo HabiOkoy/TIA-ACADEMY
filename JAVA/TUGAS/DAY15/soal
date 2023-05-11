@@ -1,0 +1,40 @@
+Buat aplikasi java sebagai berikut yang dijalankan dengan:
+
+
+Tulis String -> Menulis ke File (directory dan namaFile)
+
+
+Masukan nama Directory : C:\\tmp\\
+
+Masukan nama File : test2.txt
+
+
+Nama: Hary
+
+Tempat Lahir: Jakarta
+
+Tanggal Lahir: 6 Mei 1984
+
+
+Di dalam file jadinya:
+
+
+Hary
+
+Jakarta
+
+6 Mei 1984
+
+
+Baca String -> Membaca dari File (directory dan namaFile)
+
+
+Masukan nama Directory : C:\\tmp\\
+
+Masukan nama File : test2.txt
+
+
+EXIT
+
+
+(Kirim Source Code dan SS hasilnya)
