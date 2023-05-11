@@ -1,0 +1,37 @@
+Buat sebuah program kalkulator sederhana yang memiliki karakterisitik:
+
+Memiliki 4 Method 
+
+Pertambahan
+
+Pengurangan
+
+Perkalian 
+
+Pembagian
+
+Masing-masing Method memiliki return type int dan memiliki 2 parameter integer
+
+
+Tampilan sebagai berikut:
+
+
+KALKULATOR
+
+1. Pertambahan
+
+2. Pengurangan
+
+3. Perkalian
+
+4. Pembagian
+
+5. EXIT
+
+Input nomor : 1
+
+Bilangan 1 = 2
+
+Bilangan 2 = 3
+
+Pertambahan = 5
