@@ -1,0 +1,50 @@
+Buat Aplikasi Mini Market dengan Tampilan sebagai berikut
+
+Username : Hary
+
+Password : password
+
+
+Selamat datang Hary, masukan 5 data item yang akan dijual :
+
+Barang 1
+
+Nama Barang : Apel
+
+Jumlah Barang (kg) : 5
+
+Harga Satuan (per-kg) : 1000
+
+Barang 2
+
+Nama Barang : Minyak
+
+Jumlah Barang (liter) : 2
+
+Harga Satuan (per-liter) : 4000
+
+…
+
+Barang 5
+
+Nama Barang : Telur
+
+Jumlah Barang (kg) : 2
+
+Harga Satuan (per- kg) : 2000
+
+
+Tampilan
+
+Apel 5 kg (@1000) Rp. 5000
+
+Minyak 2 liter (@4000) Rp. 8000
+
+…
+
+…
+
+Telur 2 kg (@2000) Rp. 4000
+
+Total belanja adalah Rp. 9999
+
