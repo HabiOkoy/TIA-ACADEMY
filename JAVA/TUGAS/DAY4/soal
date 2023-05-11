@@ -1,0 +1,15 @@
+Buat Program Java yang mengaplikasikan Java Basic Input dan Output dengan data sebagai berikut:
+
+
+Lakukan perhitungan Volume Bola dengan membuat variable pi, dan jari-jari nilai variabel tersebut harus di input menggunakan Java Input (Scanner) dan tampilkan seperti yang terlihat dibawah ini: 
+
+Pi = 3.14
+
+Jari-jari = 7
+
+Volume Bola adalah 1436.02
+
+Tugas yang di-submit adalah:
+
+Source code java
+Screenshot hasil eksekusi code di atas
