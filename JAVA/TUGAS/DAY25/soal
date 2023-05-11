@@ -1,0 +1,41 @@
+Buat table-table dengan data sebagai berikut
+
+
+Tabel Pesanan
+
+Id Pesanan
+
+Tgl Pesanan
+
+Harga Pesanan
+
+Catatan
+
+
+Tabel Detil Pesanan
+
+Id Detil Pesanan
+
+Jumlah
+
+
+Tabel Pelanggan
+
+Id Pelanggan
+
+Nama Pelanggan
+
+Alamat Pelanggan
+
+
+Tabel Produk
+
+Id Produk
+
+Nama Produk
+
+Harga Produk
+
+
+Buat Relationship One-To-Many antara table-tabel diatas
+
