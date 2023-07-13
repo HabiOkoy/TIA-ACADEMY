@@ -1,0 +1,5 @@
+NumPy:
+https://docs.google.com/presentation/d/1LNNydV4hgnU51PRCzLrICcyYXhHI4srs/edit?usp=sharing&ouid=103054900647594048133&rtpof=true&sd=true
+
+Pandas:
+https://docs.google.com/presentation/d/1bpP2VctL2TuKRaCe05xXybTetdqd5DcE/edit?usp=sharing&ouid=103054900647594048133&rtpof=true&sd=true
